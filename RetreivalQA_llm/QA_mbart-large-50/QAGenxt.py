@@ -46,7 +46,7 @@ def text_preprocessing(text):
 	return stemmed_tokens, lemmatized_tokens
 
 def model_selection():
-    api_key="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" #Hugging face API
+    api_key= "" #Hugging face API
     llm = HuggingFaceHub(repo_id="facebook/mbart-large-50", model_kwargs={"temperature":1, "max_length":512}, huggingfacehub_api_token=api_key)
     return llm
 
